@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracias por contactarnos | GR&P Consultores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#061f3d;
+ --blue:#2f86c7;
+ --light:#f5f8fc;
+ --text:#344054;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+ font-family:'Inter',sans-serif;
+ background:linear-gradient(180deg,#f8fbff 0%,#eef5fb 100%);
+ min-height:100vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:24px;
+ color:var(--text);
+}
+.card{
+ max-width:760px;
+ width:100%;
+ background:#fff;
+ border-radius:28px;
+ padding:50px;
+ text-align:center;
+ box-shadow:0 25px 70px rgba(6,31,61,.12);
+}
+.logo{
+ margin-bottom:30px;
+}
+.logo img{
+ max-width:340px;
+ width:100%;
+ height:auto;
+}
+.icon{
+ width:90px;
+ height:90px;
+ margin:0 auto 24px;
+ border-radius:50%;
+ background:linear-gradient(135deg,var(--navy),var(--blue));
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}
+.icon svg{
+ width:44px;
+ height:44px;
+ stroke:#fff;
+ stroke-width:2;
+ fill:none;
+}
+h1{
+ font-family:'Montserrat',sans-serif;
+ color:var(--navy);
+ font-size:clamp(2rem,4vw,3rem);
+ margin-bottom:18px;
+}
+p{
+ font-size:1.08rem;
+ line-height:1.8;
+ margin-bottom:18px;
+}
+.highlight{
+ color:var(--navy);
+ font-weight:600;
+}
+.btn{
+ display:inline-block;
+ margin-top:14px;
+ background:linear-gradient(135deg,var(--navy),var(--blue));
+ color:#fff;
+ text-decoration:none;
+ padding:14px 28px;
+ border-radius:999px;
+ font-weight:700;
+ transition:.25s;
+}
+.btn:hover{
+ transform:translateY(-2px);
+}
+.footer{
+ margin-top:28px;
+ font-size:.92rem;
+ color:#667085;
+}
+@media(max-width:760px){
+ .card{padding:34px 24px;}
+ .logo img{max-width:260px;}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="logo">
+        <img src="assets/logo-gryp-principal.png" alt="GR&P Consultores">
+    </div>
+
+    <div class="icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M5 13l4 4L19 7"/>
+        </svg>
+    </div>
+
+    <h1>Gracias por contactarnos</h1>
+
+    <p>
+        Hemos recibido correctamente su consulta.
+    </p>
+
+    <p>
+        Revisaremos la información enviada y nos comunicaremos con usted a la brevedad para coordinar una conversación y entender mejor los desafíos y necesidades de su organización.
+    </p>
+
+    <p class="highlight">
+        Gracias por confiar en GR&P Consultores.
+    </p>
+
+    <a href="index.html" class="btn">
+        Volver al sitio web
+    </a>
+
+    <div class="footer">
+        Consultoría especializada en Gestión de Riesgos No Financieros
+    </div>
+
+</div>
+
+</body>
+</html>
