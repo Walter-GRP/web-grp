@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://web-grp.vercel.app/sitemap.xml
+Sitemap: https://grypconsultores.com/sitemap.xml
