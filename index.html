@@ -1238,6 +1238,115 @@ body.menu-open{
     }
 }
 
+
+/* V23: sección Blog / Artículos */
+.blog-section{
+    background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
+}
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+}
+.blog-card{
+    background:#ffffff;
+    border:1px solid rgba(8,31,61,.06);
+    border-radius:28px;
+    padding:32px;
+    box-shadow:0 14px 38px rgba(6,31,61,.055);
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
+}
+.blog-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:linear-gradient(135deg,rgba(47,134,199,.075),transparent 46%);
+    opacity:0;
+    transition:opacity .28s ease;
+    pointer-events:none;
+}
+.blog-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 24px 58px rgba(6,31,61,.105);
+    border-color:rgba(47,134,199,.18);
+}
+.blog-card:hover::before{opacity:1;}
+.blog-card>*{position:relative;z-index:1;}
+.blog-tag{
+    display:inline-flex;
+    align-items:center;
+    background:#eef7ff;
+    color:var(--blue);
+    border:1px solid rgba(47,134,199,.16);
+    border-radius:999px;
+    padding:8px 12px;
+    font-size:.78rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:18px;
+}
+.blog-card h3{
+    font-family:'Montserrat',Arial,sans-serif;
+    color:#061f3d;
+    font-size:1.22rem;
+    line-height:1.28;
+    letter-spacing:-.025em;
+    margin-bottom:14px;
+    font-weight:800;
+}
+.blog-card p{
+    color:#5f6b7a;
+    line-height:1.72;
+    font-size:.97rem;
+    margin-bottom:20px;
+}
+.blog-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:18px;
+}
+.blog-meta span{
+    background:#f7fbff;
+    border:1px solid rgba(8,31,61,.08);
+    border-radius:999px;
+    padding:7px 10px;
+    color:#061f3d;
+    font-size:.82rem;
+    font-weight:700;
+}
+.blog-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--blue);
+    font-weight:800;
+    margin-top:10px;
+}
+.blog-link::after{content:"→";transition:transform .2s ease;}
+.blog-link:hover::after{transform:translateX(3px);}
+.blog-cta{
+    margin-top:34px;
+    background:linear-gradient(135deg,#061f3d,#0b2f5b);
+    color:#ffffff;
+    border-radius:28px;
+    padding:30px 34px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:24px;
+    align-items:center;
+    box-shadow:0 20px 50px rgba(6,31,61,.16);
+}
+.blog-cta p{color:#d9e8f6;line-height:1.7;}
+.blog-cta h3{font-family:'Montserrat',Arial,sans-serif;margin-bottom:8px;letter-spacing:-.025em;}
+@media(max-width:980px){.blog-grid{grid-template-columns:1fr 1fr}.blog-cta{grid-template-columns:1fr}}
+@media(max-width:760px){.blog-grid{grid-template-columns:1fr;gap:18px}.blog-card{padding:26px;border-radius:24px}.blog-cta{padding:26px;border-radius:24px}.blog-card h3{font-size:1.08rem}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1453,10 +1562,57 @@ body.menu-open{
 }
 </script>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Artículos y perspectivas de GR&P Consultores",
+  "alternateName": "Blog de GRYP Consultores",
+  "url": "https://grypconsultores.com/#articulos",
+  "inLanguage": "es-PE",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GR&P Consultores",
+    "url": "https://grypconsultores.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://grypconsultores.com/assets/logo-gryp-principal.png"
+    }
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "¿Cómo transformar la gestión de riesgos en una capacidad estratégica?",
+      "description": "Reflexiones sobre cómo la gestión de riesgos puede fortalecer la toma de decisiones, la resiliencia y la generación de valor en las organizaciones.",
+      "author": {"@type": "Person", "name": "Walter Flores"},
+      "publisher": {"@type": "Organization", "name": "GR&P Consultores"},
+      "mainEntityOfPage": "https://grypconsultores.com/#articulo-gestion-riesgos-capacidad-estrategica"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Riesgo Operacional, Continuidad de Negocios y Ciberseguridad: capacidades clave para la resiliencia empresarial",
+      "description": "Una mirada integrada a tres capacidades críticas para gestionar interrupciones, eventos operacionales y riesgos tecnológicos.",
+      "author": {"@type": "Person", "name": "Walter Flores"},
+      "publisher": {"@type": "Organization", "name": "GR&P Consultores"},
+      "mainEntityOfPage": "https://grypconsultores.com/#articulo-riesgo-operacional-continuidad-ciberseguridad"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Principales desafíos de la gestión de riesgos no financieros en 2026",
+      "description": "Tendencias y desafíos para fortalecer modelos de riesgo operacional, continuidad, ciberseguridad, cumplimiento y riesgo de terceros.",
+      "author": {"@type": "Person", "name": "Walter Flores"},
+      "publisher": {"@type": "Organization", "name": "GR&P Consultores"},
+      "mainEntityOfPage": "https://grypconsultores.com/#articulo-desafios-riesgos-no-financieros-2026"
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
-<header><div class="container nav"><a class="brand" href="#inicio"><img src="assets/logo-gryp-principal.png" alt="Logotipo de GR&P Consultores" fetchpriority="high"></a><nav class="nav-links" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#especialidades">Áreas</a><a href="#marcos">Estándares</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a></nav>
+<header><div class="container nav"><a class="brand" href="#inicio"><img src="assets/logo-gryp-principal.png" alt="Logotipo de GR&P Consultores" fetchpriority="high"></a><nav class="nav-links" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#especialidades">Áreas</a><a href="#marcos">Estándares</a><a href="#experiencia">Experiencia</a><a href="#articulos">Artículos</a><a href="#contacto">Contacto</a></nav>
 <button class="mobile-menu-button" aria-label="Abrir menú" aria-expanded="false">
     <span></span>
     <span></span>
@@ -1469,6 +1625,7 @@ body.menu-open{
         <a href="#especialidades">Áreas</a>
         <a href="#marcos">Estándares</a>
         <a href="#experiencia">Experiencia</a>
+        <a href="#articulos">Artículos</a>
         <a href="#contacto">Contacto</a>
     </div>
 </div>
@@ -1551,6 +1708,51 @@ body.menu-open{
 
             <div class="experience-sector reveal delay-3">Empresas de Servicios</div>
             <div class="experience-detail reveal delay-3">Fortalecimiento de modelos de riesgo operacional, continuidad del negocio y resiliencia operacional.</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="articulos" class="blog-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow" style="color:var(--blue);">Artículos y perspectivas</span>
+            <h2>Ideas para convertir la gestión de riesgos en una capacidad estratégica</h2>
+            <p>Compartimos reflexiones, criterios prácticos y buenas prácticas sobre gestión de riesgos no financieros, riesgo operacional, continuidad de negocios, ciberseguridad, cumplimiento, riesgo de terceros y resiliencia operacional en Perú y Latinoamérica.</p>
+        </div>
+
+        <div class="blog-grid">
+            <article id="articulo-gestion-riesgos-capacidad-estrategica" class="blog-card reveal delay-1">
+                <span class="blog-tag">Gestión Integral de Riesgos</span>
+                <h3>¿Cómo transformar la gestión de riesgos en una capacidad estratégica?</h3>
+                <p>La gestión de riesgos no debe limitarse al cumplimiento regulatorio. Bien diseñada, permite anticipar escenarios, priorizar decisiones, proteger objetivos estratégicos y fortalecer la generación de valor.</p>
+                <div class="blog-meta"><span>ISO 31000</span><span>Gobierno de riesgos</span><span>Alta Dirección</span></div>
+                <a class="blog-link" href="#contacto" aria-label="Solicitar información sobre gestión integral de riesgos">Conversemos sobre este tema</a>
+            </article>
+
+            <article id="articulo-riesgo-operacional-continuidad-ciberseguridad" class="blog-card reveal delay-2">
+                <span class="blog-tag">Resiliencia Operacional</span>
+                <h3>Riesgo Operacional, Continuidad y Ciberseguridad: tres capacidades clave</h3>
+                <p>Las organizaciones necesitan integrar la gestión de eventos operacionales, la continuidad de negocios y la ciberseguridad para responder mejor ante interrupciones, incidentes y escenarios de crisis.</p>
+                <div class="blog-meta"><span>Riesgo operacional</span><span>ISO 22301</span><span>Ciberseguridad</span></div>
+                <a class="blog-link" href="#contacto" aria-label="Solicitar información sobre resiliencia operacional">Conversemos sobre este tema</a>
+            </article>
+
+            <article id="articulo-desafios-riesgos-no-financieros-2026" class="blog-card reveal delay-3">
+                <span class="blog-tag">Tendencias 2026</span>
+                <h3>Principales desafíos de la gestión de riesgos no financieros en 2026</h3>
+                <p>La presión regulatoria, la digitalización, la dependencia de terceros, la inteligencia artificial y la necesidad de mayor resiliencia exigirán modelos de riesgos más integrados, dinámicos y ejecutivos.</p>
+                <div class="blog-meta"><span>Riesgos no financieros</span><span>Riesgo de terceros</span><span>IA y riesgos</span></div>
+                <a class="blog-link" href="#contacto" aria-label="Solicitar información sobre desafíos de riesgos no financieros">Conversemos sobre este tema</a>
+            </article>
+        </div>
+
+        <div class="blog-cta reveal delay-2">
+            <div>
+                <h3>Contenido especializado para equipos directivos y áreas de control</h3>
+                <p>Publicaremos periódicamente análisis sobre regulación SBS y SMV, estándares ISO, continuidad de negocios, riesgo operacional, cumplimiento, ciberseguridad y gestión de riesgos en la implementación de inteligencia artificial.</p>
+            </div>
+            <a class="btn btn-primary" href="#contacto">Solicitar una reunión</a>
         </div>
     </div>
 </section>
