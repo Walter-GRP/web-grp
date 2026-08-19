@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>¿Seguimos gestionando los riesgos mirando por el retrovisor? | GR&amp;P Consultores</title>
+<meta content="Cómo evolucionar de una gestión de riesgos retrospectiva y reactiva hacia una gestión anticipativa que detecte señales, evalúe escenarios y fortalezca la toma de decisiones." name="description"/>
+<meta content="Gestión anticipativa de riesgos, Gestión de riesgos, Riesgos no financieros, Toma de decisiones, GR&amp;P Consultores" name="keywords"/>
+<meta content="GR&amp;P Consultores - Walter Flores" name="author"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<link href="https://www.grypconsultores.com/articulos/gestion-anticipativa-riesgos-retrovisor.html" rel="canonical"/>
+<meta content="#061f3d" name="theme-color"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="es_PE" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="¿Seguimos gestionando los riesgos mirando por el retrovisor?" property="og:title"/>
+<meta content="Cómo evolucionar de una gestión de riesgos retrospectiva y reactiva hacia una gestión anticipativa que detecte señales, evalúe escenarios y fortalezca la toma de decisiones." property="og:description"/>
+<meta content="https://www.grypconsultores.com/articulos/gestion-anticipativa-riesgos-retrovisor.html" property="og:url"/>
+<meta content="GR&amp;P Consultores" property="og:site_name"/>
+<meta content="https://www.grypconsultores.com/assets/og-gryp-consultores-v2.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Seguimos gestionando los riesgos mirando por el retrovisor?" name="twitter:title"/>
+<meta content="Cómo evolucionar de una gestión de riesgos retrospectiva y reactiva hacia una gestión anticipativa que detecte señales, evalúe escenarios y fortalezca la toma de decisiones." name="twitter:description"/>
+<meta content="https://www.grypconsultores.com/assets/og-gryp-consultores-v2.jpg" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Montserrat:wght@600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9RTH06X64S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9RTH06X64S');</script><style>
+:root{--navy:#061f3d;--navy-2:#0b2f5b;--blue:#2f86c7;--light-blue:#eef7ff;--gray:#5f6b7a;--white:#fff;--dark:#142033;--shadow:0 22px 60px rgba(6,31,61,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',Arial,Helvetica,sans-serif;background:#fafbfd;color:var(--dark);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+header{background:rgba(255,255,255,.94);padding:12px 0;border-bottom:1px solid rgba(8,31,61,.07);position:sticky;top:0;z-index:100;backdrop-filter:blur(16px);box-shadow:0 8px 28px rgba(6,31,61,.04)}
+.container{width:min(1160px,92%);margin:auto}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.brand img{height:64px;width:auto;display:block;object-fit:contain}
+.nav-links{display:flex;gap:32px;font-weight:700;color:#5f6b7a;font-size:.92rem;letter-spacing:.01em}
+.nav-links a:hover{color:var(--blue)}
+.hero{position:relative;background:radial-gradient(circle at 82% 18%,rgba(47,134,199,.16),transparent 28%),radial-gradient(circle at 15% 85%,rgba(47,134,199,.10),transparent 30%),linear-gradient(135deg,#041a35,#0a3b71);color:white;padding:104px 0 92px;overflow:hidden}
+
+.hero::after{
+content:"";
+position:absolute;
+right:12%;
+top:18%;
+width:520px;
+height:520px;
+border:1px solid rgba(120,180,255,.08);
+border-radius:50%;
+pointer-events:none;
+}
+
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:66px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;gap:10px;align-items:center;color:#8fc8f3;font-weight:800;text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;margin-bottom:24px}
+.eyebrow::before{content:"";width:34px;height:2px;background:currentColor}
+.hero h1{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(2.55rem,4.65vw,4.85rem);font-weight:900;line-height:1.02;margin-bottom:30px;letter-spacing:-.055em;max-width:820px}
+.hero p{font-size:clamp(1rem,1.55vw,1.14rem);line-height:1.85;color:#e2edf8;max-width:700px;font-weight:400}
+.actions{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:999px;font-weight:800;min-height:52px;letter-spacing:.005em;transition:transform .22s ease,box-shadow .22s ease,background .22s ease,border-color .22s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(47,134,199,.18)}
+.btn-primary{background:linear-gradient(135deg,#ffffff,#e4f4ff);color:#061f3d;box-shadow:0 14px 34px rgba(47,134,199,.18)}
+.btn-secondary{border:1px solid rgba(255,255,255,.34);color:white;background:rgba(255,255,255,.035)}
+.hero-card{background:rgba(10,35,70,.34);border:none;border-radius:42px;padding:62px;display:flex;align-items:center;justify-content:center;min-height:386px;box-shadow:0 26px 74px rgba(0,0,0,.14);animation:floatCard 8s ease-in-out infinite}
+.hero-card img{width:100%;max-width:420px;object-fit:contain;border-radius:24px;display:block;box-shadow:0 18px 44px rgba(0,0,0,.10)}
+.trust-band{border-top:1px solid rgba(8,31,61,.07);border-bottom:1px solid rgba(8,31,61,.07);background:#fff;padding:38px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+.trust-item{color:var(--navy);font-weight:800}.trust-item span{display:block;margin-top:5px;color:var(--gray);font-size:.82rem;font-weight:600}
+section{padding:104px 0}
+.section-header{margin-bottom:54px;max-width:840px}
+.section-header h2{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(2.05rem,3.05vw,3.15rem);font-weight:800;margin-bottom:18px;color:#061f3d;letter-spacing:-.045em;line-height:1.12}
+.section-header p{color:#5f6b7a;line-height:1.85;font-size:1.045rem}
+.cards,.specialty-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card,.specialty-card{background:white;padding:36px;border-radius:28px;box-shadow:0 14px 38px rgba(6,31,61,.055);border:1px solid rgba(8,31,61,.055);height:100%;transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}
+.card:hover,.specialty-card:hover{transform:translateY(-7px);box-shadow:0 24px 58px rgba(6,31,61,.105);border-color:rgba(47,134,199,.18)}
+.card-number,.specialty-icon{width:56px;height:56px;display:grid;place-items:center;background:linear-gradient(135deg,#061f3d,#3478b7);color:white;border-radius:18px;margin-bottom:24px;font-weight:800;box-shadow:0 12px 28px rgba(47,134,199,.20)}
+.specialty-icon svg,.card-number svg{width:25px;height:25px;stroke-width:1.9}
+.service-kicker{color:var(--blue);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.card h3,.specialty-card h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;margin-bottom:15px;line-height:1.27;letter-spacing:-.025em;font-weight:800}
+.card p,.specialty-card p,.card li{color:#5f6b7a;line-height:1.75;font-size:.98rem}
+.card ul{margin-top:16px;padding-left:18px}
+.light{background:linear-gradient(180deg,#f7faff 0%,#ffffff 100%)}
+.two-col{display:grid;grid-template-columns:.92fr 1.08fr;gap:60px;align-items:start}
+.pill-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.pill{background:#fff;border:1px solid #dce5ef;border-radius:999px;padding:10px 14px;color:var(--navy);font-size:.92rem;font-weight:700}
+.client-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.client-card{background:white;padding:22px;border-radius:18px;text-align:center;font-weight:700;color:#061f3d;box-shadow:0 12px 30px rgba(6,31,61,.06);border:1px solid rgba(8,31,61,.06)}
+.profile{background:radial-gradient(circle at top right,rgba(47,134,199,.32),transparent 35%),linear-gradient(135deg,#061f3d,#0b2f5b);color:white;border-radius:32px;padding:40px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.profile-top{display:flex;gap:22px;align-items:center}
+.profile-photo{width:135px;height:135px;border-radius:50%;object-fit:cover;object-position:center top;border:4px solid rgba(255,255,255,.16);box-shadow:0 16px 34px rgba(0,0,0,.22)}
+.profile p{color:#d9e8f6;line-height:1.8}
+.experience-list{display:grid;gap:14px}
+.experience-item{background:white;border-left:4px solid var(--blue);padding:20px 22px;border-radius:16px;color:var(--gray);box-shadow:0 12px 28px rgba(6,31,61,.06)}
+.contact{background:radial-gradient(circle at 88% 18%,rgba(47,134,199,.35),transparent 28%),linear-gradient(135deg,#061f3d,#0b2f5b);color:white;padding:55px;border-radius:34px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.contact h2{font-size:clamp(2rem,3vw,3.1rem);line-height:1.08;letter-spacing:-.045em;margin-bottom:14px}
+.contact p{color:#d9e8f6;line-height:1.8}
+.contact-actions{display:flex;flex-direction:column;gap:12px;min-width:220px}
+.contact .btn-secondary{background:white;color:var(--navy);border:none;box-shadow:0 12px 28px rgba(255,255,255,.08)}
+footer{padding:38px 0;text-align:center;color:#5f6b7a;font-size:.95rem;border-top:1px solid rgba(8,31,61,.08)}
+.reveal{opacity:0;transform:translateY(22px);animation:revealUp .8s ease forwards}.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}
+@keyframes revealUp{to{opacity:1;transform:translateY(0)}}@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(max-width:980px){.hero-grid,.two-col,.contact{grid-template-columns:1fr}.cards,.specialty-grid{grid-template-columns:1fr 1fr}.trust-grid{grid-template-columns:1fr 1fr}.hero-card{max-width:680px;min-height:auto;padding:42px}}
+@media(max-width:760px){.nav-links{display:none}.brand img{height:52px}.hero{padding:78px 0 66px}.hero h1{font-size:2.45rem;line-height:1.04}.hero p{font-size:1rem;line-height:1.75}section{padding:74px 0}.cards,.specialty-grid,.client-grid,.trust-grid{grid-template-columns:1fr}.card,.specialty-card,.profile,.contact{padding:28px}.hero-card{padding:30px;border-radius:30px}.actions{flex-direction:column;align-items:stretch}.btn{width:100%}.profile-top{flex-direction:column;text-align:center}.profile-photo{width:115px;height:115px}.contact-actions{width:100%}.contact-actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Fase 1B: microanimaciones e interacciones premium */
+.nav-links a{
+    position:relative;
+    padding-bottom:6px;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:linear-gradient(90deg,var(--navy),var(--blue));
+    transition:width .24s ease;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,transparent,rgba(255,255,255,.34),transparent);
+    transform:translateX(-120%);
+    transition:transform .55s ease;
+}
+
+.btn:hover::before{
+    transform:translateX(120%);
+}
+
+.card-number,
+.specialty-icon{
+    transition:transform .28s ease, box-shadow .28s ease;
+}
+
+.card:hover .card-number,
+.specialty-card:hover .specialty-icon{
+    transform:translateY(-3px) scale(1.04);
+    box-shadow:0 16px 32px rgba(47,134,199,.26);
+}
+
+.specialty-icon svg{
+    transition:transform .28s ease;
+}
+
+.specialty-card:hover .specialty-icon svg{
+    transform:scale(1.08);
+}
+
+.trust-item{
+    transition:transform .22s ease, color .22s ease;
+}
+
+.trust-item:hover{
+    transform:translateY(-3px);
+    color:var(--blue);
+}
+
+.client-card{
+    position:relative;
+    overflow:hidden;
+    transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.client-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(47,134,199,.08),transparent 55%);
+    opacity:0;
+    transition:opacity .25s ease;
+}
+
+.client-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(47,134,199,.18);
+    box-shadow:0 18px 42px rgba(6,31,61,.09);
+}
+
+.client-card:hover::before{
+    opacity:1;
+}
+
+.experience-item{
+    transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.experience-item:hover{
+    transform:translateX(4px);
+    box-shadow:0 16px 38px rgba(6,31,61,.09);
+    border-left-color:#3478b7;
+}
+
+.hero-card{
+    position:relative;
+}
+
+.hero-card::before{
+    content:"";
+    position:absolute;
+    inset:18px;
+    border-radius:32px;
+    background:radial-gradient(circle at top right,rgba(143,200,243,.10),transparent 42%);
+    pointer-events:none;
+}
+
+.hero-card img{
+    position:relative;
+    z-index:1;
+    transition:transform .45s ease, box-shadow .45s ease;
+}
+
+.hero-card:hover img{
+    transform:scale(1.015);
+    box-shadow:0 22px 52px rgba(0,0,0,.14);
+}
+
+.profile{
+    transition:transform .24s ease, box-shadow .24s ease;
+}
+
+.profile:hover{
+    transform:translateY(-4px);
+    box-shadow:0 26px 60px rgba(0,0,0,.2);
+}
+
+.profile-photo{
+    transition:transform .28s ease, box-shadow .28s ease;
+}
+
+.profile:hover .profile-photo{
+    transform:scale(1.035);
+    box-shadow:0 20px 42px rgba(0,0,0,.26);
+}
+
+.pill{
+    transition:transform .2s ease, border-color .2s ease, color .2s ease, background .2s ease;
+}
+
+.pill:hover{
+    transform:translateY(-2px);
+    border-color:rgba(47,134,199,.24);
+    color:var(--blue);
+    background:#f7fbff;
+}
+
+.contact{
+    position:relative;
+    overflow:hidden;
+}
+
+.contact::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    right:-90px;
+    top:-90px;
+    border-radius:50%;
+    background:rgba(143,200,243,.08);
+}
+
+.contact > *{
+    position:relative;
+    z-index:1;
+}
+
+/* Scroll reveal más fino */
+.reveal{
+    opacity:0;
+    transform:translateY(24px);
+    animation:revealUp .9s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+/* Mejora de accesibilidad visual */
+a:focus-visible,
+button:focus-visible{
+    outline:3px solid rgba(47,134,199,.42);
+    outline-offset:4px;
+    border-radius:10px;
+}
+
+
+/* Pendientes Fase 1B: menú activo, reveal real y detalles finos */
+.nav-links a.active{
+    color:var(--navy);
+}
+
+.nav-links a.active::after{
+    width:100%;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(28px);
+    animation:none;
+    transition:opacity .82s cubic-bezier(.22,1,.36,1), transform .82s cubic-bezier(.22,1,.36,1);
+}
+
+.reveal.is-visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.reveal.delay-1{transition-delay:.08s;}
+.reveal.delay-2{transition-delay:.16s;}
+.reveal.delay-3{transition-delay:.24s;}
+
+.hero.reveal{
+    opacity:1;
+    transform:none;
+}
+
+.hero-card::after{
+    content:"";
+    position:absolute;
+    width:260px;
+    height:260px;
+    left:-90px;
+    bottom:-90px;
+    border-radius:50%;
+    background:rgba(47,134,199,.09);
+    filter:blur(4px);
+    pointer-events:none;
+}
+
+.card::before,
+.specialty-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:linear-gradient(135deg,rgba(47,134,199,.07),transparent 42%);
+    opacity:0;
+    transition:opacity .28s ease;
+    pointer-events:none;
+}
+
+.card,
+.specialty-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.card:hover::before,
+.specialty-card:hover::before{
+    opacity:1;
+}
+
+.card > *,
+.specialty-card > *{
+    position:relative;
+    z-index:1;
+}
+
+.card-number svg,
+.specialty-icon svg{
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+@media(max-width:760px){
+    .reveal{
+        transform:translateY(16px);
+        transition-duration:.55s;
+    }
+
+    .hero-card{
+        animation:none;
+    }
+}
+
+
+/* Fase 1C: optimización móvil premium */
+.mobile-menu-button{
+    display:none;
+    width:44px;
+    height:44px;
+    border:1px solid rgba(8,31,61,.12);
+    border-radius:14px;
+    background:#ffffff;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    box-shadow:0 8px 24px rgba(6,31,61,.06);
+}
+
+.mobile-menu-button span{
+    width:20px;
+    height:2px;
+    background:var(--navy);
+    border-radius:999px;
+    transition:transform .25s ease, opacity .25s ease;
+}
+
+.mobile-menu-button.is-open span:nth-child(1){
+    transform:translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-button.is-open span:nth-child(2){
+    opacity:0;
+}
+
+.mobile-menu-button.is-open span:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu{
+    display:none;
+    position:fixed;
+    inset:74px 0 auto 0;
+    z-index:90;
+    padding:0 4%;
+    pointer-events:none;
+}
+
+.mobile-menu.is-open{
+    pointer-events:auto;
+}
+
+.mobile-menu-inner{
+    background:rgba(255,255,255,.98);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(8,31,61,.08);
+    border-radius:24px;
+    box-shadow:0 24px 70px rgba(6,31,61,.16);
+    padding:14px;
+    transform:translateY(-12px);
+    opacity:0;
+    transition:opacity .25s ease, transform .25s ease;
+}
+
+.mobile-menu.is-open .mobile-menu-inner{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.mobile-menu a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 18px;
+    color:var(--navy);
+    font-weight:800;
+    border-radius:16px;
+}
+
+.mobile-menu a::after{
+    content:"→";
+    color:var(--blue);
+    font-weight:800;
+}
+
+.mobile-menu a:hover{
+    background:#f3f8fd;
+}
+
+@media(max-width:760px){
+    header{
+        padding:10px 0;
+    }
+
+    .nav{
+        min-height:48px;
+    }
+
+    .mobile-menu-button{
+        display:flex;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+
+    .hero{
+        padding:72px 0 58px;
+    }
+
+    .hero-grid{
+        gap:34px;
+    }
+
+    .eyebrow{
+        font-size:.68rem;
+        letter-spacing:.14em;
+        margin-bottom:18px;
+    }
+
+    .eyebrow::before{
+        width:26px;
+    }
+
+    .hero h1{
+        max-width:100%;
+        font-size:clamp(2.1rem,9vw,2.75rem);
+        letter-spacing:-.045em;
+        margin-bottom:22px;
+    }
+
+    .hero p{
+        max-width:100%;
+        font-size:1rem;
+        line-height:1.72;
+        color:#e3eef8;
+    }
+
+    .actions{
+        margin-top:28px;
+        gap:12px;
+    }
+
+    .hero-card{
+        margin-top:4px;
+        padding:24px;
+        min-height:auto;
+        border-radius:28px;
+        box-shadow:0 18px 50px rgba(0,0,0,.14);
+    }
+
+    .hero-card img{
+        max-width:320px;
+        border-radius:18px;
+    }
+
+    .trust-band{
+        padding:26px 0;
+    }
+
+    .trust-grid{
+        gap:12px;
+    }
+
+    .trust-item{
+        padding:14px 10px;
+        border:1px solid rgba(8,31,61,.06);
+        border-radius:16px;
+        background:#ffffff;
+        box-shadow:0 8px 24px rgba(6,31,61,.04);
+    }
+
+    .section-header{
+        margin-bottom:34px;
+    }
+
+    .section-header h2{
+        font-size:clamp(1.85rem,7vw,2.25rem);
+        line-height:1.14;
+    }
+
+    .section-header p{
+        font-size:1rem;
+        line-height:1.72;
+    }
+
+    .card,
+    .specialty-card{
+        border-radius:24px;
+        padding:26px;
+    }
+
+    .card-number,
+    .specialty-icon{
+        width:50px;
+        height:50px;
+        border-radius:16px;
+        margin-bottom:20px;
+    }
+
+    .card h3,
+    .specialty-card h3{
+        font-size:1.08rem;
+    }
+
+    .card p,
+    .specialty-card p,
+    .card li{
+        font-size:.96rem;
+        line-height:1.68;
+    }
+
+    .pill-list{
+        gap:10px;
+    }
+
+    .pill{
+        font-size:.86rem;
+        padding:9px 12px;
+    }
+
+    .client-card{
+        padding:18px;
+        min-height:68px;
+    }
+
+    .experience-list{
+        gap:12px;
+    }
+
+    .experience-item{
+        padding:17px 18px;
+        font-size:.96rem;
+    }
+
+    .profile{
+        border-radius:26px;
+    }
+
+    .contact{
+        border-radius:28px;
+        gap:24px;
+    }
+
+    .contact h2{
+        font-size:2rem;
+    }
+
+    footer{
+        padding:28px 18px;
+        font-size:.86rem;
+        line-height:1.55;
+    }
+}
+
+@media(max-width:420px){
+    .container{
+        width:min(100%,90%);
+    }
+
+    .brand img{
+        height:38px;
+    }
+
+    .mobile-menu{
+        inset:68px 0 auto 0;
+    }
+
+    .hero h1{
+        font-size:2.05rem;
+    }
+
+    .hero-card{
+        padding:20px;
+    }
+
+    .hero-card img{
+        max-width:280px;
+    }
+
+    .btn{
+        min-height:50px;
+        padding:13px 20px;
+        font-size:.94rem;
+    }
+
+    .card,
+    .specialty-card,
+    .profile,
+    .contact{
+        padding:24px;
+    }
+}
+
+body.menu-open{
+    overflow:hidden;
+}
+
+
+/* V11: portafolio ampliado de servicios */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.service-card{background:#ffffff;border:1px solid rgba(8,31,61,.055);border-radius:28px;padding:32px;box-shadow:0 14px 38px rgba(6,31,61,.055);position:relative;overflow:hidden;transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;height:100%}
+.service-card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,rgba(47,134,199,.075),transparent 46%);opacity:0;transition:opacity .28s ease;pointer-events:none}
+.service-card:hover{transform:translateY(-7px);box-shadow:0 24px 58px rgba(6,31,61,.105);border-color:rgba(47,134,199,.18)}
+.service-card:hover::before{opacity:1}
+.service-card>*{position:relative;z-index:1}
+.service-meta{display:flex;align-items:center;justify-content:flex-start;gap:16px;margin-bottom:24px}
+.service-number{display:none}
+.service-icon{width:58px;height:58px;display:grid;place-items:center;background:linear-gradient(135deg,#061f3d,#3478b7);color:#ffffff;border-radius:18px;box-shadow:0 12px 28px rgba(47,134,199,.20);transition:transform .28s ease,box-shadow .28s ease}
+.service-card:hover .service-icon{transform:translateY(-3px) scale(1.04);box-shadow:0 16px 32px rgba(47,134,199,.26)}
+.service-icon svg{width:29px;height:29px;stroke-width:1.85;stroke-linecap:round;stroke-linejoin:round}
+.service-card h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:1.18rem;line-height:1.25;letter-spacing:-.025em;margin-bottom:14px;font-weight:800}
+.service-card p{color:#5f6b7a;line-height:1.72;font-size:.96rem}
+.capability-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.capability-card{background:#ffffff;border:1px solid rgba(8,31,61,.06);border-radius:28px;padding:30px;box-shadow:0 14px 38px rgba(6,31,61,.05);height:100%;position:relative;overflow:hidden}
+.capability-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--navy),var(--blue))}
+.capability-card h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:1.08rem;line-height:1.28;margin-bottom:16px;letter-spacing:-.025em}
+.capability-card ul{padding-left:18px;display:grid;gap:8px}
+.capability-card li{color:#5f6b7a;font-size:.95rem;line-height:1.55}
+.standards-wrap{display:grid;grid-template-columns:.88fr 1.12fr;gap:56px;align-items:start}
+.standard-group{background:#ffffff;border:1px solid rgba(8,31,61,.06);border-radius:28px;padding:34px;box-shadow:0 14px 38px rgba(6,31,61,.05)}
+.standard-group+.standard-group{margin-top:22px}
+.standard-group h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;margin-bottom:18px;letter-spacing:-.025em}
+.standard-pills{display:flex;flex-wrap:wrap;gap:12px}
+.standard-pill{background:#f7fbff;border:1px solid rgba(47,134,199,.18);border-radius:999px;color:#061f3d;padding:10px 14px;font-size:.92rem;font-weight:800}
+@media(max-width:1180px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1080px){.capability-grid{grid-template-columns:repeat(2,1fr)}.standards-wrap{grid-template-columns:1fr}}
+@media(max-width:760px){.services-grid,.capability-grid{grid-template-columns:1fr;gap:18px}.service-card,.capability-card,.standard-group{padding:26px;border-radius:24px}.service-card h3,.capability-card h3{font-size:1.04rem}.service-card p,.capability-card li{font-size:.95rem}}
+
+
+/* V12: sección de contacto con formulario */
+.contact-section{
+    background:
+        radial-gradient(circle at 8% 16%, rgba(47,134,199,.08), transparent 26%),
+        radial-gradient(circle at 92% 82%, rgba(47,134,199,.08), transparent 26%),
+        linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
+    padding-bottom:0;
+}
+
+.contact-layout{
+    display:grid;
+    grid-template-columns:.86fr 1.14fr;
+    gap:58px;
+    align-items:start;
+}
+
+.contact-intro h2{
+    font-family:'Montserrat',Arial,sans-serif;
+    font-size:clamp(2.4rem,4vw,4.2rem);
+    color:var(--navy);
+    letter-spacing:-.055em;
+    line-height:1.02;
+    margin-bottom:22px;
+}
+
+.contact-line{
+    width:52px;
+    height:3px;
+    background:var(--blue);
+    border-radius:999px;
+    margin-bottom:26px;
+}
+
+.contact-intro p{
+    color:#5f6b7a;
+    line-height:1.8;
+    font-size:1.02rem;
+    max-width:560px;
+}
+
+.contact-intro strong{
+    display:block;
+    color:var(--navy);
+    font-size:1.08rem;
+    line-height:1.55;
+    margin:20px 0 28px;
+}
+
+.contact-info-list{
+    display:grid;
+    gap:18px;
+    margin-top:28px;
+}
+
+.contact-info-item{
+    display:grid;
+    grid-template-columns:54px 1fr;
+    gap:18px;
+    align-items:center;
+}
+
+.contact-info-icon{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#edf6ff;
+    color:var(--blue);
+    box-shadow:0 10px 26px rgba(47,134,199,.10);
+}
+
+.contact-info-icon svg{
+    width:25px;
+    height:25px;
+    stroke-width:1.9;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.contact-info-text{
+    border-left:1px solid rgba(47,134,199,.35);
+    padding-left:18px;
+}
+
+.contact-info-text b{
+    display:block;
+    color:var(--navy);
+    font-weight:800;
+    margin-bottom:2px;
+}
+
+.contact-info-text span,
+.contact-info-text a{
+    color:#142033;
+    font-size:.98rem;
+}
+
+.contact-form-card{
+    background:#ffffff;
+    border:1px solid rgba(8,31,61,.06);
+    border-radius:30px;
+    padding:34px;
+    box-shadow:0 24px 70px rgba(6,31,61,.12);
+}
+
+.contact-form{
+    display:grid;
+    gap:14px;
+}
+
+.form-field{
+    position:relative;
+}
+
+.form-field svg{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    width:23px;
+    height:23px;
+    color:var(--blue);
+    stroke-width:1.9;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    pointer-events:none;
+}
+
+.form-field.textarea svg{
+    top:25px;
+    transform:none;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    border:1.5px solid rgba(47,134,199,.68);
+    border-radius:10px;
+    padding:17px 18px 17px 58px;
+    font-family:'Inter',Arial,sans-serif;
+    font-size:1rem;
+    color:var(--dark);
+    outline:none;
+    background:#ffffff;
+    transition:border-color .2s ease, box-shadow .2s ease;
+}
+
+.contact-form textarea{
+    min-height:142px;
+    resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:var(--blue);
+    box-shadow:0 0 0 4px rgba(47,134,199,.11);
+}
+
+.contact-submit{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    background:linear-gradient(135deg,var(--blue),#0757bd);
+    color:#ffffff;
+    border-radius:10px;
+    min-height:58px;
+    font-family:'Montserrat',Arial,sans-serif;
+    font-weight:800;
+    font-size:1rem;
+    letter-spacing:.02em;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    box-shadow:0 18px 38px rgba(47,134,199,.22);
+    transition:transform .22s ease, box-shadow .22s ease;
+}
+
+.contact-submit:hover{
+    transform:translateY(-2px);
+    box-shadow:0 22px 46px rgba(47,134,199,.30);
+}
+
+.contact-submit svg{
+    width:22px;
+    height:22px;
+    stroke-width:1.9;
+}
+
+.privacy-note{
+    margin-top:16px;
+    color:#5f6b7a;
+    font-size:.88rem;
+    display:flex;
+    gap:9px;
+    align-items:center;
+}
+
+.privacy-note svg{
+    width:16px;
+    height:16px;
+    color:#5f6b7a;
+}
+
+.contact-process{
+    margin:58px auto 0;
+    background:linear-gradient(135deg,#061f3d,#0b2f5b);
+    border-radius:24px;
+    padding:28px 34px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    box-shadow:0 24px 58px rgba(6,31,61,.22);
+}
+
+.process-item{
+    display:grid;
+    grid-template-columns:52px 1fr;
+    gap:16px;
+    align-items:center;
+    border-right:1px solid rgba(255,255,255,.18);
+    padding-right:18px;
+}
+
+.process-item:last-child{
+    border-right:none;
+}
+
+.process-icon{
+    color:var(--blue);
+}
+
+.process-icon svg{
+    width:46px;
+    height:46px;
+    stroke-width:1.7;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.process-item b{
+    display:block;
+    color:#ffffff;
+    font-size:1rem;
+}
+
+.process-item span{
+    color:#d9e8f6;
+    font-size:.95rem;
+}
+
+.contact-footer{
+    margin-top:36px;
+    background:linear-gradient(135deg,#061f3d,#0b2f5b);
+    color:#ffffff;
+    padding:34px 0 22px;
+}
+
+.contact-footer-grid{
+    display:grid;
+    grid-template-columns:220px 1fr 1fr 1fr;
+    gap:28px;
+    align-items:center;
+}
+
+.contact-footer-logo img{
+    width:170px;
+    max-width:100%;
+    display:block;
+}
+
+.footer-contact-item{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    color:#e2edf8;
+    justify-content:center;
+}
+
+.footer-contact-item svg{
+    width:22px;
+    height:22px;
+    color:var(--blue);
+    stroke-width:1.9;
+}
+
+.footer-copy{
+    border-top:1px solid rgba(255,255,255,.12);
+    margin-top:26px;
+    padding-top:18px;
+    text-align:center;
+    color:#d9e8f6;
+    font-size:.92rem;
+}
+
+@media(max-width:980px){
+    .contact-layout{
+        grid-template-columns:1fr;
+        gap:38px;
+    }
+
+    .contact-process{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-item:nth-child(2){
+        border-right:none;
+    }
+
+    .contact-footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-footer-logo{
+        grid-column:1/-1;
+        display:flex;
+        justify-content:center;
+    }
+}
+
+@media(max-width:760px){
+    .contact-section{
+        padding-top:76px;
+    }
+
+    .contact-form-card{
+        padding:24px;
+        border-radius:24px;
+    }
+
+    .contact-intro h2{
+        font-size:2.45rem;
+    }
+
+    .contact-info-item{
+        grid-template-columns:48px 1fr;
+        gap:14px;
+    }
+
+    .contact-info-icon{
+        width:48px;
+        height:48px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        padding-left:52px;
+    }
+
+    .contact-process{
+        grid-template-columns:1fr;
+        padding:26px;
+        gap:22px;
+    }
+
+    .process-item{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.16);
+        padding:0 0 18px 0;
+    }
+
+    .process-item:last-child{
+        border-bottom:none;
+        padding-bottom:0;
+    }
+
+    .contact-footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-contact-item{
+        justify-content:center;
+    }
+}
+
+
+/* V18: ajustes finales de marca y contacto */
+.contact-layout-form-first{grid-template-columns:1.08fr .92fr;}
+.contact-layout-form-first .contact-intro h2{font-size:clamp(2rem,3vw,3rem);}
+@media(max-width:980px){.contact-layout-form-first{grid-template-columns:1fr;}}
+@media(max-width:760px){
+  .brand img{height:52px!important;}
+  header{padding:8px 0!important;}
+  .contact-layout-form-first{grid-template-columns:1fr!important;}
+  .contact-section .section-header h2{font-size:clamp(1.85rem,7vw,2.35rem);}
+}
+
+
+/* V19: corrección específica de orden en contacto móvil y tamaño de logo */
+@media(max-width:760px){
+    .brand img{
+        height:64px !important;
+        max-width:220px !important;
+    }
+
+    .nav{
+        min-height:68px !important;
+    }
+
+    .contact-layout-form-first{
+        display:flex !important;
+        flex-direction:column !important;
+    }
+
+    .contact-layout-form-first .contact-form-card{
+        order:1 !important;
+    }
+
+    .contact-layout-form-first .contact-intro{
+        order:2 !important;
+    }
+}
+
+@media(max-width:420px){
+    .brand img{
+        height:58px !important;
+        max-width:205px !important;
+    }
+
+    .nav{
+        min-height:64px !important;
+    }
+}
+
+
+/* Ajustes finales v22 */
+.brand img{
+    height:68px !important;
+    width:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.experience-aligned-grid{
+    display:grid;
+    grid-template-columns:.92fr 1.08fr;
+    gap:18px;
+    align-items:stretch;
+}
+
+.experience-sector,
+.experience-detail{
+    background:white;
+    border:1px solid rgba(8,31,61,.06);
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(6,31,61,.06);
+    min-height:78px;
+    display:flex;
+    align-items:center;
+}
+
+.experience-sector{
+    justify-content:center;
+    text-align:center;
+    font-weight:800;
+    color:#061f3d;
+    padding:20px;
+}
+
+.experience-detail{
+    border-left:4px solid var(--blue);
+    color:var(--gray);
+    padding:20px 22px;
+    line-height:1.65;
+}
+
+@media(max-width:760px){
+    .brand img{
+        height:64px !important;
+        max-width:220px !important;
+    }
+
+    .experience-aligned-grid{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .experience-sector{
+        justify-content:flex-start;
+        text-align:left;
+        min-height:auto;
+        padding:18px;
+    }
+
+    .experience-detail{
+        min-height:auto;
+        padding:18px;
+        margin-bottom:10px;
+    }
+}
+
+@media(max-width:420px){
+    .brand img{
+        height:58px !important;
+        max-width:205px !important;
+    }
+}
+
+
+/* V23: sección Blog / Artículos */
+.blog-section{
+    background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
+}
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+}
+.blog-card{
+    background:#ffffff;
+    border:1px solid rgba(8,31,61,.06);
+    border-radius:28px;
+    padding:32px;
+    box-shadow:0 14px 38px rgba(6,31,61,.055);
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
+}
+.blog-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:linear-gradient(135deg,rgba(47,134,199,.075),transparent 46%);
+    opacity:0;
+    transition:opacity .28s ease;
+    pointer-events:none;
+}
+.blog-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 24px 58px rgba(6,31,61,.105);
+    border-color:rgba(47,134,199,.18);
+}
+.blog-card:hover::before{opacity:1;}
+.blog-card>*{position:relative;z-index:1;}
+.blog-tag{
+    display:inline-flex;
+    align-items:center;
+    background:#eef7ff;
+    color:var(--blue);
+    border:1px solid rgba(47,134,199,.16);
+    border-radius:999px;
+    padding:8px 12px;
+    font-size:.78rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:18px;
+}
+.blog-card h3{
+    font-family:'Montserrat',Arial,sans-serif;
+    color:#061f3d;
+    font-size:1.22rem;
+    line-height:1.28;
+    letter-spacing:-.025em;
+    margin-bottom:14px;
+    font-weight:800;
+}
+.blog-card p{
+    color:#5f6b7a;
+    line-height:1.72;
+    font-size:.97rem;
+    margin-bottom:20px;
+}
+.blog-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:18px;
+}
+.blog-meta span{
+    background:#f7fbff;
+    border:1px solid rgba(8,31,61,.08);
+    border-radius:999px;
+    padding:7px 10px;
+    color:#061f3d;
+    font-size:.82rem;
+    font-weight:700;
+}
+.blog-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--blue);
+    font-weight:800;
+    margin-top:10px;
+}
+.blog-link::after{content:"→";transition:transform .2s ease;}
+.blog-link:hover::after{transform:translateX(3px);}
+.blog-cta{
+    margin-top:34px;
+    background:linear-gradient(135deg,#061f3d,#0b2f5b);
+    color:#ffffff;
+    border-radius:28px;
+    padding:30px 34px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:24px;
+    align-items:center;
+    box-shadow:0 20px 50px rgba(6,31,61,.16);
+}
+.blog-cta p{color:#d9e8f6;line-height:1.7;}
+.blog-cta h3{font-family:'Montserrat',Arial,sans-serif;margin-bottom:8px;letter-spacing:-.025em;}
+@media(max-width:980px){.blog-grid{grid-template-columns:1fr 1fr}.blog-cta{grid-template-columns:1fr}}
+@media(max-width:760px){.blog-grid{grid-template-columns:1fr;gap:18px}.blog-card{padding:26px;border-radius:24px}.blog-cta{padding:26px;border-radius:24px}.blog-card h3{font-size:1.08rem}}
+
+
+
+/* V4 Centro de Conocimiento */
+.knowledge-hero{background:radial-gradient(circle at 85% 20%,rgba(47,134,199,.18),transparent 30%),linear-gradient(135deg,#061f3d,#0b2f5b);color:#fff;padding:86px 0 72px;}
+.knowledge-hero h1{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(2.2rem,4vw,4.2rem);line-height:1.05;letter-spacing:-.055em;margin:12px 0 20px;max-width:920px;}
+.knowledge-hero p{max-width:820px;color:#d9e8f6;font-size:1.08rem;line-height:1.85;}
+.knowledge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
+.knowledge-card{background:#fff;border:1px solid rgba(8,31,61,.07);border-radius:30px;box-shadow:0 18px 48px rgba(6,31,61,.08);overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;}
+.knowledge-card:hover{transform:translateY(-5px);box-shadow:0 26px 66px rgba(6,31,61,.13);border-color:rgba(47,134,199,.25);}
+.knowledge-card img{width:100%;height:220px;object-fit:cover;display:block;}
+.knowledge-card-body{padding:30px;}
+.knowledge-card h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:1.34rem;line-height:1.25;letter-spacing:-.03em;margin:14px 0;}
+.knowledge-card p{color:#5f6b7a;line-height:1.75;font-size:.98rem;}
+.k-meta{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 8px;}
+.k-chip{display:inline-flex;border:1px solid rgba(47,134,199,.18);background:#f5fbff;color:#061f3d;border-radius:999px;padding:7px 11px;font-size:.82rem;font-weight:800;}
+.knowledge-link{display:inline-flex;align-items:center;gap:8px;color:#2f86c7;font-weight:900;margin-top:18px;}
+.knowledge-link::after{content:'→';}
+.topic-panel{background:#fff;border:1px solid rgba(8,31,61,.07);border-radius:30px;padding:34px;box-shadow:0 18px 48px rgba(6,31,61,.08);}
+.topic-panel h2{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:2rem;letter-spacing:-.04em;margin-bottom:14px;}
+.topic-panel p{color:#5f6b7a;line-height:1.75;margin-bottom:22px;}
+.topic-cloud{display:flex;flex-wrap:wrap;gap:12px;}
+.topic-cloud span{background:#eef7ff;border:1px solid rgba(47,134,199,.22);border-radius:999px;padding:10px 14px;color:#061f3d;font-weight:800;font-size:.92rem;}
+.k-cta{background:radial-gradient(circle at 85% 15%,rgba(47,134,199,.33),transparent 30%),linear-gradient(135deg,#061f3d,#0b2f5b);color:#fff;border-radius:32px;padding:42px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;box-shadow:0 24px 58px rgba(6,31,61,.20);}
+.k-cta h2{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);line-height:1.1;letter-spacing:-.045em;margin-bottom:14px;}
+.k-cta p{color:#d9e8f6;line-height:1.75;max-width:860px;}
+.article-page{background:#f7faff;}
+.article-hero{background:linear-gradient(135deg,#061f3d,#0b2f5b);color:#fff;padding:70px 0 58px;}
+.breadcrumb{display:flex;gap:8px;flex-wrap:wrap;color:#b8d9f1;font-weight:700;font-size:.92rem;margin-bottom:24px;}
+.breadcrumb a{color:#fff;}
+.article-hero h1{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(2rem,4vw,4rem);line-height:1.08;letter-spacing:-.055em;max-width:980px;margin:16px 0 20px;}
+.article-meta{display:flex;flex-wrap:wrap;gap:14px;color:#d9e8f6;font-weight:700;}
+.article-cover{margin-top:-28px;}
+.article-cover img{width:100%;border-radius:30px;box-shadow:0 24px 70px rgba(6,31,61,.22);display:block;}
+.article-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:34px;align-items:start;padding-top:42px;}
+.article-body{background:#fff;border:1px solid rgba(8,31,61,.07);border-radius:30px;padding:44px 48px;box-shadow:0 16px 44px rgba(6,31,61,.06);}
+.article-body p{font-size:1.06rem;line-height:1.9;color:#25334a;margin:0 0 22px;}
+.article-body h2{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:1.65rem;line-height:1.25;letter-spacing:-.035em;margin:40px 0 16px;}
+.article-body h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:1.25rem;line-height:1.3;margin:28px 0 12px;}
+.article-body blockquote{border-left:5px solid #2f86c7;background:#f5fbff;border-radius:16px;padding:22px 26px;margin:28px 0;color:#061f3d;font-weight:700;font-size:1.08rem;line-height:1.75;}
+.article-body .lead{font-size:1.18rem;line-height:1.85;color:#142033;font-weight:600;}
+.article-sidebar{display:grid;gap:20px;position:sticky;top:102px;}
+.side-card{background:#fff;border:1px solid rgba(8,31,61,.07);border-radius:24px;padding:24px;box-shadow:0 14px 38px rgba(6,31,61,.06);}
+.side-card h3{font-family:'Montserrat',Arial,sans-serif;color:#061f3d;font-size:1.08rem;margin-bottom:14px;}
+.author-box{display:flex;gap:14px;align-items:center;}
+.author-box img{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:center top;}
+.author-box strong{color:#061f3d;display:block;}
+.author-box span{color:#5f6b7a;font-size:.92rem;}
+.related-list{display:grid;gap:12px;}
+.related-list a{display:block;border-top:1px solid rgba(8,31,61,.08);padding-top:12px;color:#061f3d;font-weight:800;line-height:1.35;}
+.share-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:12px 16px;border-radius:999px;background:#eef7ff;border:1px solid rgba(47,134,199,.22);color:#061f3d;font-weight:900;}
+.article-cta{margin-top:34px;background:linear-gradient(135deg,#061f3d,#0b2f5b);color:#fff;border-radius:26px;padding:34px;}
+.article-cta h2{color:#fff;margin-top:0;}
+.article-cta p{color:#d9e8f6;}
+.article-cta .btn{margin-top:6px;}
+@media(max-width:980px){.knowledge-grid{grid-template-columns:1fr}.k-cta{grid-template-columns:1fr}.article-layout{grid-template-columns:1fr}.article-sidebar{position:static}.article-body{padding:32px}.knowledge-card img{height:190px}}
+@media(max-width:760px){.knowledge-hero,.article-hero{padding:56px 0 48px}.knowledge-card-body,.topic-panel,.k-cta,.article-body{padding:26px}.article-cover img{border-radius:22px}.article-body p{font-size:1rem;line-height:1.78}.article-body h2{font-size:1.35rem}.article-meta{gap:8px;font-size:.92rem}}
+
+/* Ajuste solicitado: eliminar banners/imagenes de articulos para priorizar lectura */
+.knowledge-card > img,
+.article-cover{
+    display:none !important;
+}
+.knowledge-card-body{
+    padding-top:32px !important;
+}
+.article-hero{
+    margin-bottom:0 !important;
+}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "¿Seguimos gestionando los riesgos mirando por el retrovisor?", "description": "Cómo evolucionar de una gestión de riesgos retrospectiva y reactiva hacia una gestión anticipativa que detecte señales, evalúe escenarios y fortalezca la toma de decisiones.", "image": "https://www.grypconsultores.com/assets/og-gryp-consultores-v2.jpg", "author": {"@type": "Person", "name": "Walter Flores", "jobTitle": "Director - GR&P Consultores"}, "publisher": {"@type": "Organization", "name": "GR&P Consultores", "logo": {"@type": "ImageObject", "url": "https://www.grypconsultores.com/assets/logo-gryp-principal.png"}}, "datePublished": "2026-08-12", "dateModified": "2026-08-12", "mainEntityOfPage": "https://www.grypconsultores.com/articulos/gestion-anticipativa-riesgos-retrovisor.html"}</script><style>.article-subtitle{max-width:900px;color:#d9e8f6;font-size:1.18rem;line-height:1.65;font-weight:600;margin:-4px 0 22px;}@media(max-width:760px){.article-subtitle{font-size:1.04rem;}}</style></head><body class="article-page"><header><div class="container nav"><a class="brand" href="../index.html"><img alt="Logotipo de GR&amp;P Consultores" src="../assets/logo-gryp-principal.png"/></a><nav aria-label="Navegación principal" class="nav-links"><a href="../index.html#servicios">Servicios</a><a href="../index.html#especialidades">Áreas</a><a href="../index.html#marcos">Estándares</a><a href="../index.html#experiencia">Experiencia</a><a href="../articulos.html">Centro de Conocimiento</a><a href="../index.html#contacto">Contacto</a></nav><button aria-expanded="false" aria-label="Abrir menú" class="mobile-menu-button"><span></span><span></span><span></span></button></div></header><div aria-hidden="true" class="mobile-menu"><div class="mobile-menu-inner"><a href="../index.html#servicios">Servicios</a><a href="../index.html#especialidades">Áreas</a><a href="../index.html#marcos">Estándares</a><a href="../index.html#experiencia">Experiencia</a><a href="../articulos.html">Centro de Conocimiento</a><a href="../index.html#contacto">Contacto</a></div></div><main><section class="article-hero"><div class="container"><div class="breadcrumb"><a href="../index.html">Inicio</a><span>›</span><a href="../articulos.html">Centro de Conocimiento</a><span>›</span><span>Gestión Anticipativa de Riesgos</span></div><span class="eyebrow">Gestión Anticipativa de Riesgos</span><h1>¿Seguimos gestionando los riesgos mirando por el retrovisor?</h1><p class="article-subtitle">De una gestión retrospectiva a una gestión capaz de detectar señales, interpretar cambios y decidir antes de que los riesgos se materialicen.</p><div class="article-meta"><span>Walter Flores</span><span>Director - GR&amp;P Consultores</span><span>12 de agosto de 2026</span><span>7 minutos de lectura</span></div></div></section><div class="container article-cover"><img alt="¿Seguimos gestionando los riesgos mirando por el retrovisor?" src="../assets/og-gryp-consultores-v2.jpg"/></div><section><div class="container article-layout"><article class="article-body"><p class="lead">Durante años, los modelos de gestión de riesgos han desarrollado una gran capacidad para registrar y analizar lo que ya ocurrió.</p><p>Eventos de pérdida, incidentes, incumplimientos, resultados de auditoría, indicadores históricos, fallas de controles y evaluaciones periódicas proporcionan información indispensable para comprender cómo se ha comportado la exposición al riesgo.</p><p>El problema aparece cuando esa información se convierte en nuestra principal forma de mirar hacia adelante.</p><p>Porque gestionar riesgos no consiste solamente en comprender lo que ocurrió. Consiste, sobre todo, en anticipar qué podría ocurrir y decidir antes de que ocurra.</p><p>En un entorno donde los cambios tecnológicos, regulatorios, geopolíticos y competitivos evolucionan cada vez con mayor velocidad, una pregunta comienza a adquirir especial relevancia:</p><p>¿Nuestros modelos de gestión de riesgos están ayudándonos a anticipar el futuro o principalmente a explicar el pasado?</p><h2>El riesgo de gestionar mirando hacia atrás</h2><p>Analizar el pasado es necesario. Los eventos materializados permiten identificar causas, evaluar la efectividad de los controles, reconocer patrones y aprender de la experiencia. Los indicadores históricos permiten observar tendencias y las pérdidas proporcionan información relevante sobre la magnitud de determinadas exposiciones.</p><p>Nada de ello debería desaparecer.</p><p>Pero existe una limitación evidente: los riesgos que una organización enfrentará mañana no necesariamente se comportarán como los riesgos que enfrentó ayer.</p><p>Una organización puede tener excelentes estadísticas sobre incidentes tecnológicos históricos y, al mismo tiempo, estar incrementando rápidamente su dependencia de servicios en la nube.</p><p>Puede conocer perfectamente sus interrupciones operativas de los últimos años mientras aumenta silenciosamente su concentración en un proveedor crítico.</p><p>Puede disponer de información detallada sobre eventos de fraude conocidos mientras aparecen nuevas modalidades asociadas con inteligencia artificial.</p><p>O puede mantener indicadores estables mientras un cambio regulatorio, tecnológico o competitivo modifica sustancialmente las condiciones sobre las que esos indicadores fueron diseñados.</p><p>El pasado continúa siendo una fuente indispensable de información. Pero deja de ser suficiente cuando el entorno cambia más rápido que nuestros modelos.</p><h2>Cuando la gestión de riesgos funciona alrededor del calendario</h2><p>Existe además otro factor que puede limitar la anticipación: muchas evaluaciones de riesgo continúan organizándose principalmente alrededor de una periodicidad.</p><p>La matriz se actualiza anualmente. Los indicadores se revisan mensualmente. Los riesgos estratégicos se evalúan durante el proceso de planeamiento. Los controles se revisan de acuerdo con un cronograma.</p><p>Esta disciplina es necesaria porque proporciona consistencia, trazabilidad y gobernanza.</p><p>El problema aparece cuando la fecha de revisión se convierte en el principal detonante para volver a analizar el riesgo.</p><p>Los riesgos no esperan al siguiente comité.</p><p>Un proveedor puede deteriorarse, una nueva regulación puede modificar un proceso, una vulnerabilidad tecnológica puede incrementar una exposición o una solución basada en inteligencia artificial puede cambiar la forma en que se ejecutan determinadas decisiones mucho antes de la siguiente evaluación programada.</p><p>Por ello, la gestión periódica debería continuar existiendo, pero complementada con otra capacidad: la posibilidad de detectar cuándo las condiciones relevantes han cambiado y activar oportunamente una nueva evaluación.</p><h2>Lo que muestran los datos en América Latina</h2><p>La Encuesta Regional sobre la Gestión de Riesgos y Analítica de Datos 2025, elaborada por PwC Interaméricas y FELABAN, plantea la necesidad de evolucionar desde una gestión predominantemente reactiva y normativa hacia una gestión más predictiva, dinámica y alineada con la estrategia.</p><p>Uno de sus resultados permite dimensionar el desafío: el 70% de las entidades actualiza sus modelos de riesgo de forma anual o ante cambios significativos y solo el 13% realiza actualizaciones de manera continua. El informe señala, además, que otro 13% actualiza sus modelos únicamente ante fallas, comportamiento que relaciona con una cultura todavía más orientada a la corrección que a la prevención.</p><p>El problema no es que una revisión anual sea incorrecta.</p><p>La pregunta es qué ocurre entre una revisión y la siguiente.</p><p>Si durante ese periodo cambian las condiciones que determinan la exposición y el modelo no es capaz de detectarlo, la organización podría continuar tomando decisiones sobre una representación del riesgo que ya no corresponde completamente con la realidad.</p><h2>De una gestión retrospectiva a una gestión anticipativa</h2><p>Evolucionar hacia una gestión más anticipativa no significa intentar predecir con exactitud qué ocurrirá. Eso sería poco realista.</p><p>Significa desarrollar la capacidad para detectar señales, interpretar cambios y evaluar escenarios antes de que estos se conviertan en eventos materializados.</p><p>Podríamos observar esta evolución en tres formas de gestionar el riesgo:</p><p>Gestión retrospectiva. La organización aprende principalmente de eventos, pérdidas, incidentes y desviaciones que ya ocurrieron. La pregunta predominante es: ¿qué pasó y por qué?</p><p>Gestión reactiva. La organización detecta que su exposición está cambiando y actúa cuando indicadores, incidentes o determinadas condiciones superan los niveles esperados. La pregunta es: ¿qué debemos hacer ahora?</p><p>Gestión anticipativa. La organización incorpora señales internas y externas, tendencias, escenarios y cambios en las condiciones del negocio para identificar cómo podría evolucionar su exposición. La pregunta pasa a ser: ¿qué podría cambiar y qué deberíamos decidir antes de que ocurra?</p><p>No se trata de reemplazar una etapa por otra. Una organización madura necesita las tres. La diferencia está en no depender exclusivamente de las dos primeras.</p><h2>¿Qué cambia en un modelo anticipativo?</h2><p>El primer cambio no necesariamente requiere incorporar tecnología sofisticada. Requiere cambiar algunas preguntas.</p><p>En lugar de revisar solamente qué eventos ocurrieron, preguntarse qué condiciones están apareciendo y podrían generar nuevos eventos.</p><p>En lugar de observar únicamente cómo evolucionó un KRI, analizar qué variables podrían modificarlo durante los próximos meses.</p><p>En lugar de actualizar una matriz porque corresponde hacerlo, establecer eventos desencadenantes que obliguen a reevaluarla cuando cambien determinadas condiciones.</p><p>En lugar de analizar cada riesgo de forma aislada, explorar cómo la materialización de uno puede modificar la exposición de otros.</p><p>Y en lugar de presentar únicamente una exposición actual, incorporar escenarios que permitan entender cómo podría evolucionar y qué decisiones serían necesarias en cada caso.</p><p>La analítica de datos y la inteligencia artificial pueden fortalecer significativamente estas capacidades, identificando patrones, procesando mayores volúmenes de información y detectando señales que podrían pasar inadvertidas.</p><p>Pero la tecnología por sí sola no convierte una gestión reactiva en anticipativa. La verdadera transformación ocurre cuando esas señales forman parte del proceso de decisión.</p><h2>Cinco preguntas para saber cuánto estamos anticipando</h2><h3>¿Qué información utilizamos para identificar que un riesgo está cambiando antes de que ocurra un incidente?</h3><p>Muchas veces la respuesta son solo los eventos ya materializados; anticipar empieza por identificar señales —un cambio en un proveedor, una variación de mercado, una nueva tecnología— antes de que se conviertan en incidentes.</p><h3>1. ¿Nuestras evaluaciones se actualizan únicamente por calendario o existen eventos que activan automáticamente una reevaluación? Si la única razón para revisar un riesgo es que llegó la fecha del comité, probablemente existan cambios relevantes que la organización no está viendo hasta que ya es tarde.</h3><h3>2. ¿Nuestros indicadores muestran principalmente lo que ocurrió o también proporcionan señales sobre lo que podría ocurrir? Un indicador que solo reporta incidentes pasados confirma lo que ya se sabe; un indicador con capacidad anticipativa debería advertir sobre condiciones que podrían derivar en un incidente futuro.</h3><h3>3. ¿Evaluamos escenarios futuros para nuestros principales riesgos o trabajamos principalmente con una única estimación de exposición? Una única estimación puede ocultar cómo cambiaría la exposición bajo condiciones diferentes; explorar escenarios permite comprender posibles trayectorias y anticipar qué decisiones podrían ser necesarias en cada una de ellas.</h3><h3>4. ¿La Alta Dirección recibe alertas suficientemente tempranas como para disponer todavía de alternativas de decisión? Alertar demasiado tarde solo confirma una decisión que ya no se pudo tomar a tiempo.</h3><p>La última pregunta es probablemente la más importante. Porque anticipar no significa conocer el futuro; significa disponer de tiempo para decidir antes de que las opciones comiencen a desaparecer.</p><h2>El verdadero valor de anticipar</h2><p>Una gestión anticipativa no pretende eliminar la incertidumbre. Pretende gestionarla mejor.</p><p>Su valor no está en acertar todas las predicciones, sino en permitir que la organización reconozca antes determinados cambios, cuestione oportunamente sus supuestos y evalúe alternativas cuando todavía tiene capacidad para actuar.</p><p>La Norma ISO 31000 plantea que la gestión de riesgos debe integrarse en la gobernanza, la estrategia y la toma de decisiones. En un entorno cada vez más dinámico, esa integración exige que la información de riesgos llegue antes de la decisión y no solamente después del evento.</p><p>Quizás por ello la pregunta que deberían plantearse hoy los Directorios y la Alta Dirección ya no sea únicamente cuáles son sus principales riesgos.</p><p>¿Qué estamos viendo hoy que podría cambiar nuestra exposición mañana?</p><p>Porque conocer lo que ocurrió permite aprender. Comprender lo que está ocurriendo permite reaccionar. Pero anticipar lo que podría ocurrir permite decidir.</p><p>En GR&amp;P Consultores acompañamos a las organizaciones a transformar sus modelos de gestión de riesgos en capacidades que fortalezcan la anticipación y la toma de decisiones. Conversemos sobre los desafíos de su organización: www.grypconsultores.com.</p><p style="font-size:.92rem;color:#5f6b7a;border-top:1px solid rgba(8,31,61,.08);padding-top:18px;margin-top:30px;">Fuentes: PwC Interaméricas y FELABAN, Encuesta Regional sobre la Gestión de Riesgos y Analítica de Datos 2025, Informe de Resultados, febrero de 2026 · ISO 31000:2018.</p></article><aside class="article-sidebar"><div class="side-card"><h3>Autor</h3><div class="author-box"><img alt="Walter Flores" src="../assets/walter-flores.jpg"/><div><strong>Walter Flores</strong><span>Director - GR&amp;P Consultores</span></div></div></div><div class="side-card"><h3>Temas</h3><div class="k-meta"><span class="k-chip">Gobierno de IA</span><span class="k-chip">Gestión de riesgos</span><span class="k-chip">Alta Dirección</span></div></div><div class="side-card"><h3>Compartir</h3><a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.grypconsultores.com%2Farticulos%2Fgobierno-inteligencia-artificial-riesgos-no-conocidos.html" rel="noopener" target="_blank">Compartir en LinkedIn</a></div><div class="side-card"><h3>Artículos relacionados</h3><div class="related-list"><a href="como-saber-si-modelo-gestion-riesgos-funciona.html">¿Cómo saber si su modelo de gestión de riesgos realmente está funcionando?</a><a href="agentes-ia-quinto-elemento-gestion-riesgos.html">Los agentes de IA: el quinto elemento que los modelos de gestión de riesgos no pueden ignorar</a><a href="como-transformar-gestion-riesgos-capacidad-estrategica.html">¿Cómo transformar la gestión de riesgos en una capacidad estratégica?</a></div></div></aside></div></section></main><footer class="contact-footer"><div class="container"><div class="contact-footer-grid"><div class="contact-footer-logo"><img alt="GR&amp;P Consultores" src="../assets/logo-gryp-azul.png"/></div><div class="footer-contact-item"><span>contacto@grypconsultores.com</span></div><div class="footer-contact-item"><span>+51 999 665 002</span></div><div class="footer-contact-item"><span>Lima, Perú</span></div></div><div class="footer-copy">© 2026 GR&amp;P Consultores. Todos los derechos reservados.</div></div></footer><script>document.addEventListener("DOMContentLoaded",function(){const b=document.querySelector(".mobile-menu-button"),m=document.querySelector(".mobile-menu");if(b&&m){b.addEventListener("click",function(){b.classList.toggle("is-open");m.classList.toggle("is-open");const o=b.classList.contains("is-open");b.setAttribute("aria-expanded",o?"true":"false");m.setAttribute("aria-hidden",o?"false":"true");});document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>{b.classList.remove("is-open");m.classList.remove("is-open");}));}});</script></body></html>
