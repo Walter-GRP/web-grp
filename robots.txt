@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.grypconsultores.com/sitemap.xml
+Sitemap: https://grypconsultores.com/sitemap.xml
